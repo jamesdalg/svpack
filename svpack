@@ -255,7 +255,7 @@ def match_main(args):
                     if "B_MATCH_ID" in Avar.info:
                         Avar.info["B_MATCH_ID"] = Avar.info["B_MATCH_ID"] + "," + bestmatch.id
                     else:
-                        Avar.info["B_MATCH_ID"] = bestmatch.i
+                        Avar.info["B_MATCH_ID"] = bestmatch.id
             outvcf.write("%s" % (Avar))
 
     Avcf.close()
