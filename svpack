@@ -247,7 +247,7 @@ def match_main(args):
                 for info in infos_to_apply:
                     if info not in Avar.info:
                         Avar.info[info] = match.info[info]
-
+				Avar.info["B_MATCH_ID"] = bestmatch.id if bestmatch else "."
             outvcf.write("%s" % (Avar))
 
     Avcf.close()
